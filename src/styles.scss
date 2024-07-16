@@ -1,1 +1,52 @@
+
 /* You can add global styles to this file, and also import other style files */
+
+.sidebar{
+    flex: 2;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+.sidebar .widget{
+    margin-bottom: 1rem;
+}
+
+.sidebar button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #8fd0d8;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.formulario{
+    padding: 2rem;
+}
+
+.formulario div{
+    padding: 1rem;
+}
+
+
+
+/*  PARA TABLET  */
+@media (min-width: 768px) {
+    .main-content{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*  PARA ESCRITORIO  */
+@media (min-width: 1200px) {
+    .main-content{
+        max-width: 960px;
+    }
+    .footer{
+        max-width: 960px;
+    }
+}
