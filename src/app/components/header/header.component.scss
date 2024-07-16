@@ -1,0 +1,32 @@
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.nav {
+    /* padding: 1rem 2rem; */
+    background: #8fd0d8;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 1rem 2rem;
+    transition: all ease .8s;
+    border: solid #f4f4f4 1px;
+}
+
+.nav ul li a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav ul li:hover{
+    background-color: #cf2e2e;
+}
