@@ -1,5 +1,6 @@
 <main class="main-content">
     <div id="contenedor-articulos" class="content">
+        <app-article ng *ngFor="let post of posts " [articulo] ="post"></app-article>
         <article>
             <img src="https://www.trabajo.gob.hn/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-31-at-9.44.59-AM-1080x675.jpeg" alt="Imagen de la gaceta">
             <h2>Es oficial: SIHCAL ya fue publicado en La Gaceta</h2>
@@ -9,14 +10,15 @@
     </div>
     <aside class="sidebar">
         <div class="widget">
-            <form action="" class="formulario">
+            <form class="formulario" [formGroup]="loginForm">
+                <input formControlName="email" type="text" id="usuario" name="usuario">
                 <div>
                     <label for="">Usuario</label>
                     <input type="text" id="usuario"/>
                 </div>
                 <div>
                     <label for="">Contraseña</label>
-                    <input type="password" id="password"/>
+                    <input formControlName="password" type="password" id="password"/>
                 </div>
                 <div>
                     <button> Login </button>
